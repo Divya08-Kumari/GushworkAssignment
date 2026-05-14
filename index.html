@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  
+  <div class="sticky-header" id="stickyHeader" aria-hidden="true">
+    <div class="sticky-header__inner">
+      <span class="sticky-header__badge">🚀 New</span>
+      <span class="sticky-header__text">Gushwork raises <strong>$9M</strong> to help businesses win the AI search era</span>
+      <a href="#" class="sticky-header__cta">Read more →</a>
+    </div>
+  </div>
+
+ 
+  <header class="nav-wrapper" id="mainNav">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="#" class="nav__logo" aria-label="Gushwork Home">
+        <svg width="140" height="32" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#111"/>
+          <path d="M8 16C8 11.6 11.6 8 16 8C19.2 8 22 9.8 23.4 12.4H19.2C18.2 11.4 17.2 10.8 16 10.8C13.2 10.8 11 13 11 16C11 18.8 13.2 21 16 21C18 21 19.8 19.8 20.6 18H16V15H23.6C23.8 15.6 24 16.2 24 16.8C24 20.8 20.4 24 16 24C11.6 24 8 20.4 8 16Z" fill="white"/>
+          <text x="40" y="22" font-family="Syne, sans-serif" font-size="18" font-weight="700" fill="#111">gushwork</text>
+        </svg>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav__links" role="list">
+        <li class="nav__item nav__item--dropdown">
+          <button class="nav__link nav__link--btn" aria-expanded="false" aria-haspopup="true">
+            Platform <svg class="nav__chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="dropdown" role="menu">
+            <div class="dropdown__section">
+              <p class="dropdown__label">EXPLORE THE PRODUCT</p>
+              <a href="#" class="dropdown__item dropdown__item--featured" role="menuitem">
+                <div class="dropdown__item-img" style="background:#f0f0f0;border-radius:8px;width:60px;height:42px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px;">⚡</div>
+                <div>
+                  <strong>AI Feed</strong>
+                  <span>Your Website's Protocol for the AI Era.</span>
+                </div>
+              </a>
+            </div>
+            <div class="dropdown__section">
+              <p class="dropdown__label">FEATURES</p>
+              <a href="#" class="dropdown__item" role="menuitem"><span>🧠</span><div><strong>Brand Memory</strong><span>A single source of truth for AI.</span></div></a>
+              <a href="#" class="dropdown__item" role="menuitem"><span>📊</span><div><strong>Leads Dashboard</strong><span>Auto-filter and track every lead.</span></div></a>
+              <a href="#" class="dropdown__item" role="menuitem"><span>📄</span><div><strong>Page Creation Engine</strong><span>Content built for AI &amp; humans.</span></div></a>
+              <a href="#" class="dropdown__item" role="menuitem"><span>📈</span><div><strong>Analytics</strong><span>Track every bot and visitor.</span></div></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Case Studies</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+      </ul>
+
+      <!-- CTA Buttons -->
+      <div class="nav__actions">
+        <a href="#" class="btn btn--ghost">Log in</a>
+        <a href="#" class="btn btn--primary">Book a Demo</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#">Platform</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <a href="#" class="btn btn--primary" style="width:100%;text-align:center;margin-top:1rem;">Book a Demo</a>
+    </div>
+  </header>
+
+  <main>
+
+    
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <!-- Decorative background blobs -->
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+
+      <div class="container">
+        <!-- Top badge -->
+        <a href="#" class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Gushwork raises $9M · Read the announcement →
+        </a>
+
+        <!-- Heading -->
+        <h1 class="hero__heading" id="hero-heading">
+          Get Qualified Inbound<br/>
+          Leads From
+          <span class="hero__heading-marquee" aria-label="AI search engines: ChatGPT, Gemini, Perplexity, Claude, Grok">
+            <span class="marquee-track" aria-hidden="true">
+              <span class="marquee-item">ChatGPT</span>
+              <span class="marquee-divider">|</span>
+              <span class="marquee-item">Gemini</span>
+              <span class="marquee-divider">|</span>
+              <span class="marquee-item">Perplexity</span>
+              <span class="marquee-divider">|</span>
+              <span class="marquee-item">Claude</span>
+              <span class="marquee-divider">|</span>
+              <span class="marquee-item">Grok</span>
+              <span class="marquee-divider">|</span>
+              <span class="marquee-item">ChatGPT</span>
+              <span class="marquee-divider">|</span>
+              <span class="marquee-item">Gemini</span>
+              <span class="marquee-divider">|</span>
+            </span>
+          </span>
+        </h1>
+
+        <!-- Sub-copy -->
+        <p class="hero__sub">
+          Gushwork creates a content feed on your website — so when qualified buyers search for a business like yours, you're the answer, and you get the lead.
+        </p>
+
+        <!-- CTA form -->
+        <div class="hero__cta-group">
+          <div class="hero__input-wrap">
+            <input type="email" class="hero__input" placeholder="Enter your work email" aria-label="Work email address" />
+            <button class="btn btn--primary hero__submit">Book a Demo</button>
+          </div>
+          <p class="hero__cta-note">Not ready? <a href="#">Check how many leads you can generate →</a></p>
+        </div>
+
+        <!-- Social proof logos -->
+        <div class="hero__proof">
+          <p class="hero__proof-label">Trusted by fast-growing businesses</p>
+          <div class="hero__logos">
+            <span class="hero__logo-pill">Shopify</span>
+            <span class="hero__logo-pill">HubSpot</span>
+            <span class="hero__logo-pill">Salesforce</span>
+            <span class="hero__logo-pill">Stripe</span>
+            <span class="hero__logo-pill">Notion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         STATS STRIP
+    ═══════════════════════════════════════════ -->
+    <section class="stats" aria-label="Key metrics">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <span class="stats__number">$1.5M</span>
+            <span class="stats__label">ARR in first 90 days</span>
+          </div>
+          <div class="stats__divider" aria-hidden="true"></div>
+          <div class="stats__item">
+            <span class="stats__number">80%</span>
+            <span class="stats__label">Month-over-month growth</span>
+          </div>
+          <div class="stats__divider" aria-hidden="true"></div>
+          <div class="stats__item">
+            <span class="stats__number">1,000+</span>
+            <span class="stats__label">Leads/mo across customer base</span>
+          </div>
+          <div class="stats__divider" aria-hidden="true"></div>
+          <div class="stats__item">
+            <span class="stats__number">250+</span>
+            <span class="stats__label">Businesses served globally</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="how" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-label">HOW IT WORKS</div>
+        <h2 class="section-heading" id="how-heading">One system. Fully automated.<br/>Always compounding.</h2>
+        <p class="section-sub">From identifying buyer intent to generating qualified leads — Gushwork runs on autopilot.</p>
+
+        <div class="how__steps">
+          <article class="how__step">
+            <div class="how__step-icon" aria-hidden="true">🔍</div>
+            <div class="how__step-num">01</div>
+            <h3>Intent Discovery</h3>
+            <p>Scans Google, ChatGPT &amp; AI tools to find exactly what your buyers search for — so you target the right keywords before your competitors do.</p>
+          </article>
+          <article class="how__step">
+            <div class="how__step-icon" aria-hidden="true">✍️</div>
+            <div class="how__step-num">02</div>
+            <h3>Content &amp; Design Agent</h3>
+            <p>Generates landing pages, blogs, and guides in your brand voice — designed with your site's colours and layout. No AI slop.</p>
+          </article>
+          <article class="how__step">
+            <div class="how__step-icon" aria-hidden="true">🚀</div>
+            <div class="how__step-num">03</div>
+            <h3>Publishing Agent</h3>
+            <p>Publishes deeply-researched content at high volume into your AI Feed — optimised for both AI crawlers and human visitors.</p>
+          </article>
+          <article class="how__step">
+            <div class="how__step-icon" aria-hidden="true">🔗</div>
+            <div class="how__step-num">04</div>
+            <h3>Backlinking Agent</h3>
+            <p>Automatically flags high-potential pages and secures backlinks from high-traffic, high-DA websites where we have publishing rights.</p>
+          </article>
+          <article class="how__step">
+            <div class="how__step-icon" aria-hidden="true">♻️</div>
+            <div class="how__step-num">05</div>
+            <h3>Auto-Update Agent</h3>
+            <p>Keeps your content fresh. AI models update constantly, so every page gets refreshed when intent changes or models update.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="carousel-section" aria-labelledby="carousel-heading">
+      <div class="container">
+        <div class="section-label">PRODUCT SCREENSHOTS</div>
+        <h2 class="section-heading" id="carousel-heading">Everything you need, in one platform</h2>
+        <p class="section-sub">From intent discovery to lead capture — see every part of the Gushwork system.</p>
+      </div>
+
+      <!-- Carousel wrapper -->
+      <div class="carousel" role="region" aria-label="Product screenshots carousel">
+        <!-- Prev / Next buttons -->
+        <button class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Previous slide">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Next slide">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+
+        <!-- Track -->
+        <div class="carousel__track-wrap">
+          <ul class="carousel__track" id="carouselTrack" role="list">
+
+            <li class="carousel__slide" role="listitem">
+              <div class="carousel__card">
+                <div class="carousel__img-wrap">
+                  <div class="carousel__img" style="background:linear-gradient(135deg,#0f0f0f 0%,#1a1a2e 100%);" aria-label="AI Feed dashboard screenshot">
+                    <div class="carousel__img-placeholder">
+                      <div class="mock-dashboard">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-sidebar"></div>
+                        <div class="mock-content">
+                          <div class="mock-bar" style="width:80%;height:8px;"></div>
+                          <div class="mock-bar" style="width:60%;height:6px;margin-top:6px;"></div>
+                          <div class="mock-chart"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Zoom preview -->
+                  <div class="carousel__zoom" role="tooltip" aria-hidden="true">
+                    <div class="carousel__zoom-inner" style="background:linear-gradient(135deg,#0f0f0f 0%,#1a1a2e 100%);">
+                      <div class="mock-dashboard mock-dashboard--lg">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-sidebar"></div>
+                        <div class="mock-content">
+                          <div class="mock-bar" style="width:80%;height:10px;"></div>
+                          <div class="mock-bar" style="width:60%;height:8px;margin-top:8px;"></div>
+                          <div class="mock-chart"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel__zoom-label">AI Feed Dashboard</div>
+                  </div>
+                </div>
+                <div class="carousel__caption">
+                  <span class="carousel__tag">AI Feed</span>
+                  <h3>Real-time AI Feed Dashboard</h3>
+                  <p>Monitor your content's performance across AI crawlers and human visitors in one unified view.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide" role="listitem">
+              <div class="carousel__card">
+                <div class="carousel__img-wrap">
+                  <div class="carousel__img" style="background:linear-gradient(135deg,#0a2540 0%,#0d6efd22 100%);" aria-label="Leads dashboard screenshot">
+                    <div class="carousel__img-placeholder">
+                      <div class="mock-dashboard">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:12px;">
+                          <div class="mock-leads">
+                            <div class="mock-lead-row"></div>
+                            <div class="mock-lead-row"></div>
+                            <div class="mock-lead-row"></div>
+                            <div class="mock-lead-row"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__zoom" role="tooltip" aria-hidden="true">
+                    <div class="carousel__zoom-inner" style="background:linear-gradient(135deg,#0a2540 0%,#0d6efd22 100%);">
+                      <div class="mock-dashboard mock-dashboard--lg">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:16px;">
+                          <div class="mock-leads">
+                            <div class="mock-lead-row"></div>
+                            <div class="mock-lead-row"></div>
+                            <div class="mock-lead-row"></div>
+                            <div class="mock-lead-row"></div>
+                            <div class="mock-lead-row"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel__zoom-label">Leads Dashboard</div>
+                  </div>
+                </div>
+                <div class="carousel__caption">
+                  <span class="carousel__tag">Leads</span>
+                  <h3>Smart Leads Dashboard</h3>
+                  <p>See every visitor, auto-filter spam, and get alerted only when leads that matter come in.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide" role="listitem">
+              <div class="carousel__card">
+                <div class="carousel__img-wrap">
+                  <div class="carousel__img" style="background:linear-gradient(135deg,#0d1f00 0%,#1a4700 100%);" aria-label="Page creation engine screenshot">
+                    <div class="carousel__img-placeholder">
+                      <div class="mock-dashboard">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:10px;">
+                          <div class="mock-bar" style="width:90%;height:10px;background:#4ade8044;"></div>
+                          <div class="mock-bar" style="width:70%;height:7px;background:#4ade8033;margin-top:6px;"></div>
+                          <div class="mock-bar" style="width:50%;height:7px;background:#4ade8022;margin-top:6px;"></div>
+                          <div class="mock-bar" style="width:80%;height:7px;background:#4ade8033;margin-top:6px;"></div>
+                          <div class="mock-bar" style="width:60%;height:7px;background:#4ade8022;margin-top:6px;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__zoom" role="tooltip" aria-hidden="true">
+                    <div class="carousel__zoom-inner" style="background:linear-gradient(135deg,#0d1f00 0%,#1a4700 100%);">
+                      <div class="mock-dashboard mock-dashboard--lg">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:14px;">
+                          <div class="mock-bar" style="width:90%;height:12px;background:#4ade8055;"></div>
+                          <div class="mock-bar" style="width:70%;height:9px;background:#4ade8044;margin-top:8px;"></div>
+                          <div class="mock-bar" style="width:50%;height:9px;background:#4ade8033;margin-top:8px;"></div>
+                          <div class="mock-bar" style="width:80%;height:9px;background:#4ade8044;margin-top:8px;"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel__zoom-label">Page Creation Engine</div>
+                  </div>
+                </div>
+                <div class="carousel__caption">
+                  <span class="carousel__tag">Content</span>
+                  <h3>Page Creation Engine</h3>
+                  <p>Content, landing pages, and resources built for AI bots and human visitors — published automatically.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide" role="listitem">
+              <div class="carousel__card">
+                <div class="carousel__img-wrap">
+                  <div class="carousel__img" style="background:linear-gradient(135deg,#1a0030 0%,#3d0070 100%);" aria-label="Analytics screenshot">
+                    <div class="carousel__img-placeholder">
+                      <div class="mock-dashboard">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:10px;">
+                          <div class="mock-analytics-bars">
+                            <div class="mock-abar" style="height:30%;background:#a855f766;"></div>
+                            <div class="mock-abar" style="height:60%;background:#a855f788;"></div>
+                            <div class="mock-abar" style="height:45%;background:#a855f766;"></div>
+                            <div class="mock-abar" style="height:75%;background:#a855f799;"></div>
+                            <div class="mock-abar" style="height:55%;background:#a855f777;"></div>
+                            <div class="mock-abar" style="height:85%;background:#a855f7aa;"></div>
+                            <div class="mock-abar" style="height:65%;background:#a855f788;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__zoom" role="tooltip" aria-hidden="true">
+                    <div class="carousel__zoom-inner" style="background:linear-gradient(135deg,#1a0030 0%,#3d0070 100%);">
+                      <div class="mock-dashboard mock-dashboard--lg">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:14px;">
+                          <div class="mock-analytics-bars">
+                            <div class="mock-abar" style="height:30%;background:#a855f766;"></div>
+                            <div class="mock-abar" style="height:60%;background:#a855f788;"></div>
+                            <div class="mock-abar" style="height:45%;background:#a855f766;"></div>
+                            <div class="mock-abar" style="height:75%;background:#a855f799;"></div>
+                            <div class="mock-abar" style="height:55%;background:#a855f777;"></div>
+                            <div class="mock-abar" style="height:85%;background:#a855f7aa;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel__zoom-label">Analytics</div>
+                  </div>
+                </div>
+                <div class="carousel__caption">
+                  <span class="carousel__tag">Analytics</span>
+                  <h3>Full-Funnel Analytics</h3>
+                  <p>Track everything that AI bots and human visitors do on your website. Real-time, always on.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide" role="listitem">
+              <div class="carousel__card">
+                <div class="carousel__img-wrap">
+                  <div class="carousel__img" style="background:linear-gradient(135deg,#1a0a00 0%,#3d1a00 100%);" aria-label="Brand memory screenshot">
+                    <div class="carousel__img-placeholder">
+                      <div class="mock-dashboard">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:10px;">
+                          <div class="mock-nodes">
+                            <div class="mock-node" style="top:30%;left:50%;"></div>
+                            <div class="mock-node" style="top:10%;left:20%;width:18px;height:18px;"></div>
+                            <div class="mock-node" style="top:10%;left:70%;width:14px;height:14px;"></div>
+                            <div class="mock-node" style="top:60%;left:25%;width:16px;height:16px;"></div>
+                            <div class="mock-node" style="top:65%;left:72%;width:12px;height:12px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__zoom" role="tooltip" aria-hidden="true">
+                    <div class="carousel__zoom-inner" style="background:linear-gradient(135deg,#1a0a00 0%,#3d1a00 100%);">
+                      <div class="mock-dashboard mock-dashboard--lg">
+                        <div class="mock-header"><div class="mock-dot r"></div><div class="mock-dot y"></div><div class="mock-dot g"></div></div>
+                        <div class="mock-content" style="padding:14px;">
+                          <div class="mock-nodes" style="height:100px;">
+                            <div class="mock-node" style="top:40%;left:50%;width:28px;height:28px;"></div>
+                            <div class="mock-node" style="top:10%;left:20%;width:20px;height:20px;"></div>
+                            <div class="mock-node" style="top:10%;left:75%;width:16px;height:16px;"></div>
+                            <div class="mock-node" style="top:70%;left:25%;width:18px;height:18px;"></div>
+                            <div class="mock-node" style="top:70%;left:72%;width:14px;height:14px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel__zoom-label">Brand Memory</div>
+                  </div>
+                </div>
+                <div class="carousel__caption">
+                  <span class="carousel__tag">Brand</span>
+                  <h3>Brand Memory</h3>
+                  <p>A single source of truth for everything the AI needs to know about your business, voice, and audience.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Dots -->
+        <div class="carousel__dots" role="tablist" aria-label="Carousel navigation">
+          <button class="carousel__dot carousel__dot--active" role="tab" aria-selected="true" aria-label="Slide 1" data-index="0"></button>
+          <button class="carousel__dot" role="tab" aria-selected="false" aria-label="Slide 2" data-index="1"></button>
+          <button class="carousel__dot" role="tab" aria-selected="false" aria-label="Slide 3" data-index="2"></button>
+          <button class="carousel__dot" role="tab" aria-selected="false" aria-label="Slide 4" data-index="3"></button>
+          <button class="carousel__dot" role="tab" aria-selected="false" aria-label="Slide 5" data-index="4"></button>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-label">FEATURES</div>
+        <h2 class="section-heading" id="features-heading">Built for the AI era of search</h2>
+
+        <div class="features__grid">
+          <article class="feature-card feature-card--large">
+            <div class="feature-card__icon" aria-hidden="true">⚡</div>
+            <h3>AI Feed</h3>
+            <p>Your Website's Protocol for the AI Era. A separate content layer that lives on your domain, designed for AI crawlers to read and synthesize your brand into their answers.</p>
+            <a href="#" class="feature-card__link">Learn more →</a>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🧠</div>
+            <h3>Brand Memory</h3>
+            <p>Every piece of content — from services to case studies — structured so AI models cite you naturally.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📊</div>
+            <h3>Lead Tracking</h3>
+            <p>Know exactly which AI search query sent you that lead. Filter, prioritize, and never miss a hot prospect.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🔄</div>
+            <h3>Auto-Updates</h3>
+            <p>AI models update constantly. Your content updates automatically to stay relevant and cited.</p>
+          </article>
+          <article class="feature-card feature-card--accent">
+            <div class="feature-card__icon" aria-hidden="true">📈</div>
+            <h3>Compound Growth</h3>
+            <p>Every page published in month 1 keeps generating leads in month 6 and beyond. It builds on itself.</p>
+            <a href="#" class="feature-card__link">See pricing →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-label">CUSTOMER STORIES</div>
+        <h2 class="section-heading" id="testimonials-heading">Real results from real businesses</h2>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p>"Within 90 days, Gushwork had 5 qualified leads in our inbox. These were people who found us through ChatGPT asking for industrial distributors. We'd never have reached them any other way."</p>
+            <footer>
+              <div class="testimonial__avatar" aria-hidden="true">MR</div>
+              <div>
+                <cite class="testimonial__name">Michael R.</cite>
+                <span class="testimonial__role">CEO, MidWest Industrial Supply</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"We were invisible to AI search. Three months with Gushwork and we're being cited in ChatGPT answers for our core keywords. That's a completely new channel."</p>
+            <footer>
+              <div class="testimonial__avatar" aria-hidden="true">SP</div>
+              <div>
+                <cite class="testimonial__name">Sarah P.</cite>
+                <span class="testimonial__role">Marketing Director, TechFlow SaaS</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"The ROI was clear by month 4. We generate 12-15 qualified leads per month from AI search alone. Gushwork is now our highest ROI marketing channel."</p>
+            <footer>
+              <div class="testimonial__avatar" aria-hidden="true">JK</div>
+              <div>
+                <cite class="testimonial__name">James K.</cite>
+                <span class="testimonial__role">Founder, PrecisionCraft Manufacturing</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-card__blob" aria-hidden="true"></div>
+          <h2 id="cta-heading">Start generating leads from AI search today</h2>
+          <p>White-glove onboarding. No long-term contracts. First leads within 3 months.</p>
+          <div class="cta-card__actions">
+            <a href="#" class="btn btn--white">Book a Demo</a>
+            <a href="#" class="btn btn--outline-white">View Pricing →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo footer__logo" aria-label="Gushwork">
+            <svg width="130" height="30" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#fff" fill-opacity=".15"/>
+              <path d="M8 16C8 11.6 11.6 8 16 8C19.2 8 22 9.8 23.4 12.4H19.2C18.2 11.4 17.2 10.8 16 10.8C13.2 10.8 11 13 11 16C11 18.8 13.2 21 16 21C18 21 19.8 19.8 20.6 18H16V15H23.6C23.8 15.6 24 16.2 24 16.8C24 20.8 20.4 24 16 24C11.6 24 8 20.4 8 16Z" fill="white"/>
+              <text x="40" y="22" font-family="Syne, sans-serif" font-size="18" font-weight="700" fill="white">gushwork</text>
+            </svg>
+          </a>
+          <p>Get qualified inbound leads from Google &amp; AI search engines — on autopilot.</p>
+          <p class="footer__tagline">Backed by Susquehanna · Lightspeed · B Capital</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <div class="footer__col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#">AI Feed</a></li>
+              <li><a href="#">Brand Memory</a></li>
+              <li><a href="#">Page Creation Engine</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Leads Dashboard</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">AI Search Grader</a></li>
+              <li><a href="#">LLMs.txt Generator</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Gushwork, Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>
