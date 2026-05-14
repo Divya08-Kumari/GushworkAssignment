@@ -1,4 +1,4 @@
-# Gushwork-Inspired Responsive SaaS Website
+# Gushwork Assignment
 
 A modern and fully responsive SaaS landing page that follows the design and structure of Gushwork created using only HTML, CSS, and JavaScript without the use of any framework.
 
@@ -36,4 +36,3 @@ A modern and fully responsive SaaS landing page that follows the design and stru
 
 
 
-Designed as a front-end UI/UX project inspired by modern AI companies websites.
